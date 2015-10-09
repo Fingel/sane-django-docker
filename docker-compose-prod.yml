@@ -1,0 +1,14 @@
+web:
+    image: webapp:latest
+    ports:
+        - "8700:80"
+    links:
+        - db
+
+db:
+    image: postgres:9.4
+    environment:
+        POSTGRES_PASSWORD: postgres
+        PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+        - "/data/postgres:/var/lib/postgresql/data"
