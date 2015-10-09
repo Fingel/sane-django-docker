@@ -1,6 +1,5 @@
 # ignore local_settings.py
-# Uncomment this for your project!
-#local_settings.py
+local_settings.py
 
 # sqlite2 database
 *.sqlite3
